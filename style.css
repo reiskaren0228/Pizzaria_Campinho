@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap');
+
+:root {
+    --family-font: 'Domine', 'Press Start 2P', 'Roboto Mono', 'Courier New', Courier, monospace;
+    --button-font: 'IBM Plex Mono','Roboto Mono', 'Courier New', Courier, monospace;
+    --black-custom: #000000;
+    --red-custom: #cf0e0e;
+    --white-custom: #f8f8f8;
+    --button-custom: #e74c3c;
+    --box-shadow: 0px 4px 10px rgba(37, 24, 7, 0.76);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    background: linear-gradient(to left, #6f20d6 0%, #53eaea 100%);
+}
+.img__title img {
+    width: 220px;
+}
+
+.img__title {
+    width: 240px;
+    margin: 24px auto;
+    padding: 4px;
+    background-color: var(--white-custom);
+    border:2px solid #000000;
+    border-radius: 50px;
+}
+
+.formulario h2 {
+    font-family: var(--family-font);
+    font-size: 38px;
+    color: var(--red-custom);
+    padding: 16px;
+    text-align: center;
+}
+
+.formulario {
+    font-family: var(--button-font);
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid var(--red-custom);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px 450px;
+}
+
+fieldset {
+    width: 100%;
+    border: 0 none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+fieldset input {
+    width: 65%;
+    border: 0 none;
+    margin-top: 8px;
+    padding: 6px;
+}
+
+button {
+    border-radius: 10px;
+    font-family: var(--button-font);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--white-custom);
+    background: linear-gradient(45deg, var(--button-custom), var(--red-custom));
+    width: 120px;
+    margin: auto;
+    padding: 8px;
+   	cursor: pointer;    
+}
+
+@keyframes anima{
+	0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.06);
+    }
+}
+
+button:hover {
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#resultado{
+    font-family: var(--button-font);
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid var(--red-custom);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px 450px;
+    text-align: center;
+}

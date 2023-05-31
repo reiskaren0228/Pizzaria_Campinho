@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Pizzaria Ak</title>
+</head>
+<body>
+
+    <section>
+
+        <div class="img__title">
+            <img src="img/logo__pizzeria.png" alt="logo da pizzaria" title="Venha Saborear a melhor Pizza Napolitana">
+        </div>
+
+        <div class="formulario">
+
+            <h2>Conta</h2>
+
+            <form id="form_pizzaria" action="form_pizzaria">
+                <fieldset>
+                    <label class ="value__conta" for="number">Valor total da Conta:</label>
+                    <input id = "valorConta" type="number" placeholder="R$ 0,00" required>
+                </fieldset>
+    
+                <fieldset>
+                    <label class ="taxa__conta" for="number">Valor da taxa de Serviço:</label>
+                    <input id = "taxaConta" type="number" placeholder="R$ 0,00" required>
+                </fieldset>
+    
+                <fieldset>
+                    <label class ="qtd__conta" for="number">Quantidade de pagantes:</label>
+                    <input id ="qtdPessoas" type="number" placeholder="5" required>
+                </fieldset>
+    
+                <fieldset>
+                    <button id="button__calcular" type="submit" onclick="formEvent()">Calcular</button>
+                </fieldset>
+            </form>
+
+        </div>
+                
+    </section>
+
+    <section>
+
+        <div id="resultado"><div>
+
+            <fieldset>
+                <label class ="valor__total__conta" for="number">Valor Total da Conta:</label>
+            </fieldset>
+            
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
